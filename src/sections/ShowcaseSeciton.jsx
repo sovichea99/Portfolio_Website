@@ -25,10 +25,10 @@ const ShowcaseSection = () => {
               </div>
               <div className="mt-10">
                 <h2>
-                  On-Demand Tenh Made Simple With a Powerful, User-Friendly Web Called Tenh
+                E-Commerce Mobile App Using Flutter and Laravel
                 </h2>
                 <p className="dark:text-white-50 md:text-xl text-black-50">
-                  A Website built with HTML, CSS and JavaScript for a fast, user-friendly experience
+                 Engineered and integrated a secure Laravel REST API with a MongoDB backend to manage all application data.
                 </p>
               </div>
             </motion.div>
@@ -45,7 +45,7 @@ const ShowcaseSection = () => {
                 <div className="image-wrapper bg-[#ffefbd]">
                   <img src="./images/furniture_web.png" alt="" />
                 </div>
-                <h2>Library Management Platform</h2>
+                <h2>Full-Stack E-Commerce Website Using React.js and Laravel</h2>
               </motion.div>
 
               <motion.div
@@ -58,7 +58,7 @@ const ShowcaseSection = () => {
                 <div className="image-wrapper bg-[#f3e600]">
                   <img src="./images/minishop.png" alt="" />
                 </div>
-                <h2>Library Management Platform</h2>
+                <h2>E-commerce Website Using React.js and Fake API</h2>
               </motion.div>
             </div>
           </div>
