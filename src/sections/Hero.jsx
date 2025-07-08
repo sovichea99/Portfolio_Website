@@ -16,7 +16,7 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative overflow-x-hidden">
       <div className="absolute top-0 left-0 z-0">
         <img src="/images/bg.png" alt="" />
       </div>
@@ -60,7 +60,7 @@ const Hero = () => {
           </div>
         </header>
 
-        <div className="hero-3d-layout z-50 border-0 flex items-center justify-center">
+        <div className="hero-3d-layout z-0 border-0 flex items-center justify-center">
           <img
             src="/images/vichea.jpg"
             alt="Sovichea"

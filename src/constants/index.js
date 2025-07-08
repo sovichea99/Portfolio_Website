@@ -216,21 +216,21 @@ const expCards = [
   ];
   
   const socialImgs = [
-    {
-      name: "insta",
-      imgPath: "/images/insta.png",
-    },
+    
     {
       name: "fb",
       imgPath: "/images/fb.png",
+      url: "https://www.facebook.com/share/1HdtSM7pmJ/?mibextid=wwXIfr",
     },
     {
-      name: "x",
-      imgPath: "/images/x.png",
+      name: "github",
+      imgPath: "/images/github.png",
+      url: "https://github.com/sovichea99",
     },
     {
       name: "linkedin",
       imgPath: "/images/linkedin.png",
+      url: "https://www.linkedin.com/in/sovichea-suoy-53b913304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
   ];
   

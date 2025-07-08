@@ -4,6 +4,7 @@ import NavBar from "./components/HeroModels/NavBar.jsx";
 import Contact from "./sections/Contact"
 import ExperienceSection from "./sections/ExperienceSection";
 import FeatureCards from "./sections/FeatureCards";
+import Footer from "./sections/Footer.jsx";
 import Hero from "./sections/Hero";
 import ProfileSection from "./sections/ProfileSection";
 import ShowcaseSeciton from "./sections/ShowcaseSeciton";
@@ -22,6 +23,7 @@ const App = () => {
       <TechStack />
       <Testimonials/>
       <Contact/>
+      <Footer/>
     </div>
   );
 };

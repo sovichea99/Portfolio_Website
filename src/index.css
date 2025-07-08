@@ -238,7 +238,7 @@ section {
   }
 
   .cta-wrapper {
-    @apply relative z-20 cursor-pointer;
+    @apply z-[50] relative cursor-pointer pointer-events-auto;
   }
 
   .cta-button {
