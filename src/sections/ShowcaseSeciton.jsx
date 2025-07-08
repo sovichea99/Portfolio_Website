@@ -7,11 +7,11 @@ const ShowcaseSection = () => {
     <div className="w-full h-full md:px-10 mt-10 px-5">
       <TitleHeader
         title="Work That Speaks"
-        sub="Built with Precision, Designed with Purpose"
+        sub="✍️ Built with Precision, Designed with Purpose"
       />
       <section id="work" className="app-showcase ">
 
-        <div className="w-full items-center px-5 md:px-10">
+        <div className="w-full py-16 items-center px-5 md:px-10">
           <div className="showcaselayout ">
             {/* Left Side */}
             <motion.div
