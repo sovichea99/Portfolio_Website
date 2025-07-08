@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
 
 const SplitText = ({
   text=" Hi, I'm Sovichea — a developer who turns 'what ifs' into 'it works!'",
-  className = "lg:text-2xl text-sm justify-start font-semibold",
+  className = "xl:text-2xl lg:text-lg  text-sm justify-start font-semibold",
   delay = 20,
   duration = 0.4,
   ease = "power3.out",

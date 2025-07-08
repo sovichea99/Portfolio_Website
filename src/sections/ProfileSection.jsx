@@ -20,7 +20,7 @@ const ProfileSection = () => {
 
           {/* Text wraps around image */}
           <div className="text-gray-800 dark:text-white text-justify px-5">
-            <h2 className="lg:text-3xl md:text-2xl text-xl font-bold ">About Me</h2>
+            <h2 className="lg:text-3xl md:text-2xl text-xl font-bold ">Personal Summary</h2>
             <p className="lg:text-lg md:text-lg text-sm mb-4 leading-relaxed">
               I’m a recent graduate in <strong>Computer Science</strong> from the Royal University of Phnom Penh (RUPP).
               I'm passionate about building real-world web and mobile applications using modern technologies such as <strong>React</strong>, <strong>Flutter</strong>, <strong>Laravel</strong>, and <strong>MongoDB</strong>.

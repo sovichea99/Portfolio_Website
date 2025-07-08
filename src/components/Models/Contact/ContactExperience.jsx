@@ -1,13 +1,14 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-
+import useSystemTheme from "../hook/systemTheme";
 import Computer from "./Computer";
 
 const ContactExperience = () => {
+  const theme = useSystemTheme();
   return (
     <Canvas
       shadows
-      camera={{ position: [0, 6, 7], fov: 45 }}
+      camera={{ position: [-8, 3, 5], fov: 45 }}
 
     >
       <ambientLight intensity={0.5} color="#ffffff" />
@@ -35,7 +36,7 @@ const ContactExperience = () => {
           rotation={[-Math.PI / 2, 0, 0]}
         >
           <planeGeometry args={[30, 30]} />
-          <meshStandardMaterial color="#1a1a1a" />
+          <meshStandardMaterial color={theme == 'dark' ? '#000000' : '#8F8B8BFF'} />
         </mesh>
       </group>
 

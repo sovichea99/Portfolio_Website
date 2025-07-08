@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10">
+      <div className="absolute top-0 left-0 z-0">
         <img src="/images/bg.png" alt="" />
       </div>
 
@@ -50,8 +50,8 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
 
-           <div className="dark:text-white-50   lg:text-2xl md:text-xl z-10 relative pointer-event-none">
-              <SplitText/>
+            <div className="dark:text-white-50   lg:text-2xl md:text-xl z-10 relative pointer-event-none">
+              <SplitText />
             </div>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
@@ -60,13 +60,14 @@ const Hero = () => {
           </div>
         </header>
 
-        <div className="hero-3d-layout border-red-100 border-0 flex items-center justify-center">
-            <img
-              src="/images/vichea.jpg"
-              alt="Sovichea"
-              className="rounded-4xl object-cover shadow-lg xl:w-[350px] xl:h-[350px] lg:w-[320px] lg:h-[320px] md:w-[250px] md:h-[250px] sm:w-[200px] sm:h-[200px] w-[150px] h-[150px]"
-            />
-          </div>
+        <div className="hero-3d-layout z-50 border-0 flex items-center justify-center">
+          <img
+            src="/images/vichea.jpg"
+            alt="Sovichea"
+            className="hide-on-se rounded-4xl object-cover shadow-lg xl:w-[350px] xl:h-[350px] lg:w-[320px] lg:h-[320px] md:w-[250px] md:h-[250px] sm:w-[200px] sm:h-[200px] w-[150px] h-[150px]"
+          />
+
+        </div>
       </div>
     </section>
   );

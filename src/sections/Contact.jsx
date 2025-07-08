@@ -118,7 +118,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7  rounded-xl min-h-96">
-            <div className="w-full h-full bg-[#1a1a1a] hover:cursor-grab rounded-3xl overflow-hidden">
+            <div className="w-full h-full bg-[#E4F0FBFF]  dark:bg-[#1a1a1a] hover:cursor-grab rounded-3xl overflow-hidden">
                 <ContactExperience />
             </div>
           </div>
