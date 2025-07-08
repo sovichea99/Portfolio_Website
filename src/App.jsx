@@ -1,6 +1,6 @@
 import Aurora from "./components/Aurora";
 import AnimatedCounter from "./components/HeroModels/AnimatedCounter";
-import NavBar from "./components/HeroModels/Navbar.jsx";
+import NavBar from "./components/HeroModels/NavBar.jsx";
 import Contact from "./sections/Contact"
 import ExperienceSection from "./sections/ExperienceSection";
 import FeatureCards from "./sections/FeatureCards";
