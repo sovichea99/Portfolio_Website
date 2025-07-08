@@ -7,6 +7,7 @@ import FeatureCards from "./sections/FeatureCards";
 import Footer from "./sections/Footer.jsx";
 import Hero from "./sections/Hero";
 import ProfileSection from "./sections/ProfileSection";
+import ShowcaseSection from "./sections/ShowcaseSeciton";
 import ShowcaseSeciton from "./sections/ShowcaseSeciton";
 import TechStack from "./sections/TechStack";
 import Testimonials from "./sections/Testimonials";
@@ -18,12 +19,15 @@ const App = () => {
       <Hero />
       <ProfileSection />
       <AnimatedCounter />
-      <ShowcaseSeciton />
+      <div className="w-full h-full overflow-x-hidden">
+        <ShowcaseSection />
+      </div>
+
       <ExperienceSection />
       <TechStack />
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 };

@@ -11,8 +11,8 @@ const ShowcaseSection = () => {
       />
       <section id="work" className="app-showcase ">
 
-        <div className="w-full items-center px-1 mr-10 md:px-20 py-10 md:py-20">
-          <div className="showcaselayout w-full max-w-[1200px]">
+        <div className="w-full items-center px-5 md:px-10">
+          <div className="showcaselayout ">
             {/* Left Side */}
             <motion.div
               className="first-project-wrapper"
@@ -24,10 +24,10 @@ const ShowcaseSection = () => {
                 <img src="./images/Luxe_Living_App.png" alt="" />
               </div>
               <div className="mt-10">
-                <h2>
+                <h2 className="dark:text-white-50 md:text-3xl text-xl text-black-50">
                 E-Commerce Mobile App Using Flutter and Laravel
                 </h2>
-                <p className="dark:text-white-50 md:text-xl text-black-50">
+                <p className="dark:text-white-50 md:text-xl text-md text-black-50">
                  Engineered and integrated a secure Laravel REST API with a MongoDB backend to manage all application data.
                 </p>
               </div>

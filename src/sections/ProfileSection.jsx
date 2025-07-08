@@ -4,7 +4,7 @@ const ProfileSection = () => {
   return (
     <section
       id="profile"
-      className="py-16 md:px-20  dark:bg-black"
+      className="py-18 md:px-20  dark:bg-black"
     >
       <div className="max-w-7xl mx-auto justify-start items-start">
         <div className="relative overflow-hidden ">

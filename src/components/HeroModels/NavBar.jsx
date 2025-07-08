@@ -42,7 +42,8 @@ const NavBar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ top: element.offsetTop - 60,
+  behavior: 'smooth',});
     }
   };
 
@@ -117,7 +118,7 @@ const NavBar = () => {
       )}
       {/* Mobile Dock */}
       {isTablet &&(
-        <div className="fixed bottom-2 z-1000 left-1/2 transform px-2 py-2 shadow-lg">
+        <div className=" bottom-2 z-1000 left-1/2 -translate-x-1/2 px-2 py-2 shadow-lg">
           <Dock
             items={dockItems}
             panelHeight={60}
