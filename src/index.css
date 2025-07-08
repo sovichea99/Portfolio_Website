@@ -127,7 +127,7 @@ section {
   @apply fixed left-1/2 top-5 -translate-x-1/2 z-[100] rounded-full transition-all duration-300 ease-in-out w-[95%] md:w-[90%] px-5 py-4 backdrop-blur-md bg-white/10 dark:bg-black/10;
 
   &.scrolled {
-    @apply shadow-md w-[80%] md:w-[70%] bg-white/30 dark:bg-black/40 backdrop-blur-md dark:backdrop-blur-lg;
+    @apply top-1 shadow-md w-[80%] md:w-[70%] bg-white/30 dark:bg-black/40 backdrop-blur-md dark:backdrop-blur-lg;
   }
 
   &.not-scrolled {
