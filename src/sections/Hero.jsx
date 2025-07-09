@@ -16,7 +16,7 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative ">
+    <section id="hero" className="relative xl:mx-1 lg:mx-0 md:-mx-5 sm:mx-3 mx-3">
       <div className="absolute top-0 left-0 z-0">
         <img src="/images/bg.png" alt="" />
       </div>

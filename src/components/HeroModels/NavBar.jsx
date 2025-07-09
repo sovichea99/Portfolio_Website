@@ -15,15 +15,18 @@ const NavBar = () => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleThemeChange = (e) => setIsDarkMode(e.matches);
-    const checkMobile = () => setIsMobile(window.innerWidth < 768 || window.innerWidth < 640 );
-    const checkTablet = () => setIsTablet(window.innerWidth < 1024)
+    const checkMobile = () => setIsMobile(window.innerWidth < 768 || window.innerWidth < 640);
+    const checkTablet = () => setIsTablet(window.innerWidth >= 640 && window.innerWidth < 1024);
 
     setIsDarkMode(mediaQuery.matches);
     checkTablet();
     checkMobile(); // Initial check
-    mediaQuery.addEventListener("change", handleThemeChange);
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", checkMobile, checkTablet);
+    mediaQuery.addEventListener("change", handleThemeChange);
+    window.addEventListener("resize", () => {
+      checkMobile();
+      checkTablet();
+    });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -42,17 +45,18 @@ const NavBar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ top: element.offsetTop - 60,
-  behavior: 'smooth',});
+      element.scrollIntoView({
+        top: element.offsetTop - 60,
+        behavior: 'smooth',
+      });
     }
   };
 
   return (
     <>
       <header
-        className={`navbar ${scrolled ? "scrolled" : "not-scrolled"} ${
-          isDarkMode ? "dark-mode" : "light-mode"
-        }`}
+        className={`navbar ${scrolled ? "scrolled" : "not-scrolled"} ${isDarkMode ? "dark-mode" : "light-mode"
+          }`}
       >
         <div className="inner">
           <ScrollLink
@@ -105,9 +109,8 @@ const NavBar = () => {
         </div>
       </header>
 
-      {/* Mobile Dock */}
-      {isMobile &&(
-        <div className="fixed bottom-2 z-1000 left-1/2 transform px-2 py-2 shadow-lg">
+      {(isMobile || isTablet) && (
+        <div className="dock-container z-1000">
           <Dock
             items={dockItems}
             panelHeight={60}
@@ -116,17 +119,7 @@ const NavBar = () => {
           />
         </div>
       )}
-      {/* Mobile Dock */}
-      {isTablet &&(
-        <div className=" bottom-2 z-1000 left-1/2 -translate-x-1/2 px-2 py-2 shadow-lg">
-          <Dock
-            items={dockItems}
-            panelHeight={60}
-            baseItemSize={46}
-            magnification={60}
-          />
-        </div>
-      )}
+
     </>
   );
 };
