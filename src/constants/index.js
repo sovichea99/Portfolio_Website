@@ -62,7 +62,7 @@ const navLinks = [
     percent: 85,
   },
   {
-    name: "Flutter(Dart)",
+    name: "Flutter",
     imgPath: "/images/logos/flutter.png",
     percent: 70,
   },
