@@ -57,22 +57,22 @@ const navLinks = [
   
  const techStackImgs = [
   {
-    name: "React.js Developer",
+    name: "React.js",
     imgPath: "/images/logos/react_copy.png",
     percent: 85,
   },
   {
-    name: "Flutter Developer",
+    name: "Flutter(Dart)",
     imgPath: "/images/logos/flutter.png",
     percent: 70,
   },
   {
-    name: "Backend Developer",
+    name: "Laravel",
     imgPath: "/images/logos/laravel-framework.png",
     percent: 80,
   },
   {
-    name: "Project Management",
+    name: "Github",
     imgPath: "/images/logos/github.png",
     percent: 80,
   },
